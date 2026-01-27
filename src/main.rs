@@ -64,21 +64,55 @@
 //     println!("The value of x in process_integer is {}",item);
 // }
 
+// fn main() {
+//     let s1: String = get_string();
+//     println!("The value of s1 is {}", s1);
+
+//     let s2: String = String::from("Krishna");
+//     let s3: String = send_get_string(s2);
+
+//     println!("The value of s3 is {}", s3);
+// }
+
+// fn get_string() -> String {
+//     let new_string = String::from("Hare");
+//     return new_string;
+// }
+
+// fn send_get_string(recieved_string: String) -> String {
+//     return recieved_string;
+// }
+
+
+// fn main() {
+//     let s1:String = String::from("Hare");
+//     let len:usize = calculate_length(s1.clone());
+//     println!("The value of {} is {}",s1,len);
+// }
+
+// fn calculate_length(s:String) -> usize {
+//     return  s.len();
+// }
+
+// fn main() {
+//     let s1:String = String::from("Hare");
+//     let (s2,len) = calculate_length(s1);
+//     println!("The value of {} is {}",s2,len);
+// }
+
+// fn calculate_length(s:String) -> (String,usize) {
+//     let legth:usize = s.len();
+//     return (s,legth);
+
+
+// }
+
 fn main() {
-    let s1: String = get_string();
-    println!("The value of s1 is {}", s1);
-
-    let s2: String = String::from("Krishna");
-    let s3: String = send_get_string(s2);
-
-    println!("The value of s3 is {}", s3);
+    let s1:String = String::from("Hare");
+    let len:usize = calculate_length(&s1);
+    println!("The value of {} is {}",s1,len);
 }
 
-fn get_string() -> String {
-    let new_string = String::from("Hare");
-    return new_string;
-}
-
-fn send_get_string(recieved_string: String) -> String {
-    return recieved_string;
+fn calculate_length(s:&String) -> usize {
+    return  s.len();
 }
