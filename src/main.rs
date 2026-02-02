@@ -107,12 +107,20 @@
 
 // }
 
-fn main() {
-    let s1:String = String::from("Hare");
-    let len:usize = calculate_length(&s1);
-    println!("The value of {} is {}",s1,len);
-}
+// fn main() {
+//     let s1:String = String::from("Hare");
+//     let len:usize = calculate_length(&s1);
+//     println!("The value of {} is {}",s1,len);
+// }
 
-fn calculate_length(s:&String) -> usize {
-    return  s.len();
-}
+// fn calculate_length(s:&String) -> usize {
+//     return  s.len();
+// }
+
+
+// fn main() {
+//     let num:u8 = 22;
+//     let y = &num;
+//     println!("The value of y is {}",y);
+// }
+
