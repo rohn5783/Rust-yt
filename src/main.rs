@@ -124,3 +124,12 @@
 //     println!("The value of y is {}",y);
 // }
 
+fn main() {
+    let refenrence_to_nothing = create_string_ref();
+    // println!("The value of refenrence_to_nothing is {}",refenrence_to_nothing);
+}
+
+fn create_string_ref() -> &String {
+    let s = String::from("Hare");
+    return &s;
+}
