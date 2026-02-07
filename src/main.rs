@@ -140,12 +140,27 @@
 //     println!("The length of arr1 is {}", arr1.len());
 // }
 
-fn main() {
-    let arr: [&str;3] = ["Hare","Krishna","Rama"];
-    read_array(&arr);
-    println!("The value of arr is {:?}",arr);
-}
+// fn main() {
+//     let arr: [&str;3] = ["Hare","Krishna","Rama"];
+//     read_array(&arr);
+//     println!("The value of arr is {:?}",arr);
+// }
 
-fn read_array(arr2: &[&str;3]) {
-   println!("arr2 = {:?}",arr2);
-}
+// fn read_array(arr2: &[&str;3]) {
+//    println!("arr2 = {:?}",arr2);
+// }
+
+//  vector - Dynamic array
+
+// fn main() {
+//     // let mut v:Vec<i32> = Vec::new();
+//     // let mut v = Vec::<i32>::new();
+//     // v.push(10);
+//     // v.push(20);
+//     // v.push(30);
+
+// let mut v = vec![10,20,30];
+// v.push(100);  
+// v.pop();
+//     println!("The value of v is {:?}",v);
+// }
