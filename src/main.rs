@@ -139,3 +139,13 @@
 //     println!("The value of arr1 is {:?}",arr1);
 //     println!("The length of arr1 is {}", arr1.len());
 // }
+
+fn main() {
+    let arr: [&str;3] = ["Hare","Krishna","Rama"];
+    read_array(&arr);
+    println!("The value of arr is {:?}",arr);
+}
+
+fn read_array(arr2: &[&str;3]) {
+   println!("arr2 = {:?}",arr2);
+}
