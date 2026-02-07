@@ -177,3 +177,14 @@
 //     println!("The value of vrr2 is {:?}",vrr2);
 // }
 
+//  shadowing started
+
+// fn main() {
+//     let x = 5;
+// println!("The value of x is {}",x);
+//     let x = "Hare Krishna";
+//     println!("The value of x is {}",x);
+//     let x = x.len();
+//     println!("The value of x is {}",x);
+
+// }
