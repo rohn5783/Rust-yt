@@ -164,3 +164,16 @@
 // v.pop();
 //     println!("The value of v is {:?}",v);
 // }
+
+
+// fn main() {
+//     let mut vrr: Vec<&str> = vec!["Hare","Krishna","Rama"];
+//     write_vrr(& mut vrr);  /*vrr ownership transfered*/
+//     println!("The value of vrr is {:?}",vrr);
+// }
+
+// fn write_vrr(vrr2: & mut Vec<&str>) {
+//     vrr2.push("Ram");
+//     println!("The value of vrr2 is {:?}",vrr2);
+// }
+
