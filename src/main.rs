@@ -205,3 +205,32 @@
 //     }
 // }
 
+
+//  while loop statement
+// fn main() {
+//     let mut count = 0;
+//      while count < 5 {
+//         println!("The count is {}",count);
+//         count += 1;
+//      }
+// }
+
+//  for loop statement
+// fn main() {
+//     let arr = [10,20,30,40,50];
+//     for arr in arr {
+//         println!("The value of arr is {}",arr);
+//     }
+// }
+
+//  match statement
+// fn main() {
+//     let number = 2;
+
+//     match number {
+//         1 => println!("The number is one"),
+//         2 => println!("The number is two"),
+//         3 => println!("The number is three"),
+//         _ => println!("The number is not one, two, or three"),
+//     };
+// }
