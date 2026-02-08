@@ -188,3 +188,20 @@
 //     println!("The value of x is {}",x);
 
 // }
+
+//  if else statements
+
+// fn main() {
+//     let number = 12;
+
+//     if number % 3 == 0 && number % 4 == 0 {
+//         println!("The number is divisible by 3 and 4");
+//     } else if number % 3 == 0 {
+//         println!("The number is divisible by 3");
+//     } else if number % 4 == 0 {
+//         println!("The number is divisible by 4");
+//     } else {
+//         println!("The number is not divisible by 3 or 4");
+//     }
+// }
+
