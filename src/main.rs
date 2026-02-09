@@ -248,23 +248,35 @@
 
 
 //  match statement with function
-fn main() {
-    fn is_even(num:i8)->bool{
-        if num%2==0{
-            return true;
+// fn main() {
+//     fn is_even(num:i8)->bool{
+//         if num%2==0{
+//             return true;
         
-    }
-    return false;
-    }
-    let number = 1;
+//     }
+//     return false;
+//     }
+//     let number = 1;
 
-match number {
-    1 | 3 => println!("The number is one or three"),
-    2 | 4 => println!("The number is two or four"),
-    5  => println!("The number is five"),
-    _ => println!("The number is not one, two, or three"),
-}
-is_even(10);
+// match number {
+//     1 | 3 => println!("The number is one or three"),
+//     2 | 4 => println!("The number is two or four"),
+//     5  => println!("The number is five"),
+//     _ => println!("The number is not one, two, or three"),
+// }
+// is_even(10);
 
 
-}
+// }
+
+//  taking input from user
+
+
+use std::io;
+
+// fn main() {
+// let mut input = String::new();
+// io::stdin().read_line(&mut input)
+// .expect("Failed to read input");
+// println!("The input is {}",input);
+// }
