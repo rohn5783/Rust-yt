@@ -235,13 +235,36 @@
 //     };
 // }
 
-fn main() {
-    let number = 20;
+// fn main() {
+//     let number = 100;
 
-    match number {
-      10 | 1 => println!("The number is one"),
-      20 |  2 => println!("The number is two and 20"),
-      30 |  3 => println!("The number is three"),
-        _ => println!("The number is not one, two, or three"),
-    };
+//     match number {
+//       10 | 1 => println!("The number is one"),
+//       20 |  2 => println!("The number is two and 20"),
+//       30 |  3 => println!("The number is three"),
+//         _ => println!("The number is not one, two, or three"),
+//     };
+// }
+
+
+//  match statement with function
+fn main() {
+    fn is_even(num:i8)->bool{
+        if num%2==0{
+            return true;
+        
+    }
+    return false;
+    }
+    let number = 1;
+
+match number {
+    1 | 3 => println!("The number is one or three"),
+    2 | 4 => println!("The number is two or four"),
+    5  => println!("The number is five"),
+    _ => println!("The number is not one, two, or three"),
+}
+is_even(10);
+
+
 }
