@@ -234,3 +234,14 @@
 //         _ => println!("The number is not one, two, or three"),
 //     };
 // }
+
+fn main() {
+    let number = 20;
+
+    match number {
+      10 | 1 => println!("The number is one"),
+      20 |  2 => println!("The number is two and 20"),
+      30 |  3 => println!("The number is three"),
+        _ => println!("The number is not one, two, or three"),
+    };
+}
