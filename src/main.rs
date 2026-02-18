@@ -83,7 +83,6 @@
 //     return recieved_string;
 // }
 
-
 // fn main() {
 //     let s1:String = String::from("Hare");
 //     let len:usize = calculate_length(s1.clone());
@@ -104,7 +103,6 @@
 //     let legth:usize = s.len();
 //     return (s,legth);
 
-
 // }
 
 // fn main() {
@@ -116,7 +114,6 @@
 // fn calculate_length(s:&String) -> usize {
 //     return  s.len();
 // }
-
 
 // fn main() {
 //     let num:u8 = 22;
@@ -160,11 +157,10 @@
 //     // v.push(30);
 
 // let mut v = vec![10,20,30];
-// v.push(100);  
+// v.push(100);
 // v.pop();
 //     println!("The value of v is {:?}",v);
 // }
-
 
 // fn main() {
 //     let mut vrr: Vec<&str> = vec!["Hare","Krishna","Rama"];
@@ -204,7 +200,6 @@
 //         println!("The number is not divisible by 3 or 4");
 //     }
 // }
-
 
 //  while loop statement
 // fn main() {
@@ -246,13 +241,12 @@
 //     };
 // }
 
-
 //  match statement with function
 // fn main() {
 //     fn is_even(num:i8)->bool{
 //         if num%2==0{
 //             return true;
-        
+
 //     }
 //     return false;
 //     }
@@ -266,13 +260,11 @@
 // }
 // is_even(10);
 
-
 // }
 
 //  taking input from user
 
-
-use std::io;
+// use std::io;
 
 // fn main() {
 // let mut input = String::new();
@@ -280,3 +272,44 @@ use std::io;
 // .expect("Failed to read input");
 // println!("The input is {}",input);
 // }
+
+//  advanced rust started
+
+//  Algebraic Data Types
+
+//  struct and enum
+
+// #[derive(Debug)]
+// struct User {
+// username: & 'static str,
+// email: & 'static str,
+// password: & 'static str,
+
+// }
+
+
+// fn main() {
+//     let user1 = User {
+//         username: "Rohit",
+//         email: "rohit@gmail.com",
+//         password: "12345",
+//     };
+//    println!("The value of user1 is {:#?}",user1);
+// }
+    
+
+struct  Rectangle {
+    length : u32,
+    breadth : u32,
+}
+
+fn area(length: u32, breadth: u32) -> u32 {
+    length * breadth
+
+}
+
+fn main() {
+    let rect1 = Rectangle { length: 30, breadth: 50 };
+    println!("The area of rect1 is {}", area(rect1.length, rect1.breadth));
+
+}
